@@ -15,9 +15,9 @@ use Symfony\Component\Serializer\Normalizer\DenormalizableInterface;
 use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
 use Symfony\Component\Serializer\Normalizer\NormalizableInterface;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
-use Symfony\Component\Serializer\Normalizer\SerializerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\ObjectToPopulateTrait;
-use Symfony\Component\Serializer\Normalizer\SerializerAwareTrait;
+use Symfony\Component\Serializer\SerializerAwareInterface;
+use Symfony\Component\Serializer\SerializerAwareTrait;
 
 /**
  * Normalizer used with referenced normalized objects.
