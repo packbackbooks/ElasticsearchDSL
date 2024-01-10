@@ -12,21 +12,34 @@
 namespace ONGR\ElasticsearchDSL\Serializer\Normalizer;
 
 use Symfony\Component\Serializer\Normalizer\DenormalizableInterface;
-use Symfony\Component\Serializer\Normalizer\NormalizerAwareInterface;
-use Symfony\Component\Serializer\Normalizer\NormalizerAwareTrait;
+use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
+use Symfony\Component\Serializer\Normalizer\NormalizableInterface;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
+use Symfony\Component\Serializer\Normalizer\SerializerAwareInterface;
+use Symfony\Component\Serializer\Normalizer\ObjectToPopulateTrait;
+use Symfony\Component\Serializer\Normalizer\SerializerAwareTrait;
 
 /**
  * Normalizer used with referenced normalized objects.
  */
-class CustomReferencedNormalizer implements NormalizerInterface, NormalizerAwareInterface
+class CustomReferencedNormalizer implements NormalizerInterface, DenormalizerInterface, SerializerAwareInterface
 {
-    use NormalizerAwareTrait;
+    use ObjectToPopulateTrait;
+    use SerializerAwareTrait;
 
     /**
      * @var array
      */
     private $references = [];
+
+    public function getSupportedTypes(?string $format): array
+    {
+        return [
+            NormalizableInterface::class => true,
+            DenormalizableInterface::class => true,
+        ];
+    }
+
 
     public function normalize($topic, string $format = null, array $context = []): array
     {
@@ -37,7 +50,16 @@ class CustomReferencedNormalizer implements NormalizerInterface, NormalizerAware
         return $data;
     }
 
-    public function supportsNormalization($data, $format = null)
+
+    public function denormalize(mixed $data, string $type, string $format = null, array $context = []): mixed
+    {
+        $object = $this->extractObjectToPopulate($type, $context) ?? new $type();
+        $object->denormalize($this->serializer, $data, $format, $context);
+
+        return $object;
+    }
+
+    public function supportsNormalization(mixed $data, string $format = null, array $context = []): bool
     {
         return $data instanceof AbstractNormalizable;
     }
