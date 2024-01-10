@@ -41,7 +41,7 @@ class CustomReferencedNormalizer implements NormalizerInterface, DenormalizerInt
     }
 
 
-    public function normalize($topic, string $format = null, array $context = []): array
+    public function normalize($object, string $format = null, array $context = []): array
     {
         $object->setReferences($this->references);
         $data = $object->normalize($object, $format, $context);
