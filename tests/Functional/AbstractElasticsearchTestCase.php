@@ -11,8 +11,8 @@
 
 namespace Packback\ElasticsearchDSL\Tests\Functional;
 
-use Elasticsearch\Client;
-use Elasticsearch\ClientBuilder;
+use Elasticsearch5\Client;
+use Elasticsearch5\ClientBuilder;
 use Packback\ElasticsearchDSL\Search;
 
 abstract class AbstractElasticsearchTestCase extends \PHPUnit_Framework_TestCase
