@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Unit\SearchEndpoint;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Unit\SearchEndpoint;
 
-use ONGR\ElasticsearchDSL\SearchEndpoint\SortEndpoint;
-use ONGR\ElasticsearchDSL\Sort\FieldSort;
+use Packback\ElasticsearchDSL\SearchEndpoint\SortEndpoint;
+use Packback\ElasticsearchDSL\Sort\FieldSort;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 
@@ -26,7 +26,7 @@ class SortEndpointTest extends \PHPUnit_Framework_TestCase
      */
     public function testItCanBeInstantiated()
     {
-        $this->assertInstanceOf('ONGR\ElasticsearchDSL\SearchEndpoint\SortEndpoint', new SortEndpoint());
+        $this->assertInstanceOf('Packback\ElasticsearchDSL\SearchEndpoint\SortEndpoint', new SortEndpoint());
     }
 
     /**

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Unit\SearchEndpoint;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Unit\SearchEndpoint;
 
-use ONGR\ElasticsearchDSL\Highlight\Highlight;
-use ONGR\ElasticsearchDSL\SearchEndpoint\HighlightEndpoint;
+use Packback\ElasticsearchDSL\Highlight\Highlight;
+use Packback\ElasticsearchDSL\SearchEndpoint\HighlightEndpoint;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
 
@@ -26,7 +26,7 @@ class HighlightEndpointTest extends \PHPUnit_Framework_TestCase
      */
     public function testItCanBeInstantiated()
     {
-        $this->assertInstanceOf('ONGR\ElasticsearchDSL\SearchEndpoint\HighlightEndpoint', new HighlightEndpoint());
+        $this->assertInstanceOf('Packback\ElasticsearchDSL\SearchEndpoint\HighlightEndpoint', new HighlightEndpoint());
     }
 
     /**

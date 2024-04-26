@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Metric\Aggregation;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Metric\Aggregation;
 
-use ONGR\ElasticsearchDSL\Aggregation\Metric\StatsAggregation;
+use Packback\ElasticsearchDSL\Aggregation\Metric\StatsAggregation;
 
 class StatsAggregationTest extends \PHPUnit_Framework_TestCase
 {

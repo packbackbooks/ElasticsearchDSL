@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Query\FullText;
+namespace Packback\ElasticsearchDSL\Query\FullText;
 
 /**
  * Represents Elasticsearch "match_phrase" query.

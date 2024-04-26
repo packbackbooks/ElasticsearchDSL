@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Query\Geo;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Query\Geo;
 
-use ONGR\ElasticsearchDSL\Query\Geo\GeoShapeQuery;
+use Packback\ElasticsearchDSL\Query\Geo\GeoShapeQuery;
 
 class GeoShapeQueryTest extends \PHPUnit_Framework_TestCase
 {

@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Query\Specialized;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Query\Specialized;
 
-use ONGR\ElasticsearchDSL\Query\Specialized\MoreLikeThisQuery;
+use Packback\ElasticsearchDSL\Query\Specialized\MoreLikeThisQuery;
 
 class MoreLikeThisQueryTest extends \PHPUnit_Framework_TestCase
 {

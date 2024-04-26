@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Query\Compound;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Query\Compound;
 
-use ONGR\ElasticsearchDSL\BuilderInterface;
-use ONGR\ElasticsearchDSL\Query\Compound\IndicesQuery;
+use Packback\ElasticsearchDSL\BuilderInterface;
+use Packback\ElasticsearchDSL\Query\Compound\IndicesQuery;
 
 class IndicesQueryTest extends \PHPUnit_Framework_TestCase
 {
@@ -21,7 +21,7 @@ class IndicesQueryTest extends \PHPUnit_Framework_TestCase
      */
     private function getQueryMock()
     {
-        $mock = $this->getMockBuilder('ONGR\ElasticsearchDSL\BuilderInterface')
+        $mock = $this->getMockBuilder('Packback\ElasticsearchDSL\BuilderInterface')
             ->setMethods(['toArray', 'getType'])->getMock();
         $mock
             ->expects($this->any())

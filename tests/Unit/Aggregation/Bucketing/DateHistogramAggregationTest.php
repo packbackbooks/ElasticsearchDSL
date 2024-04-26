@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Bucketing\Aggregation;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Bucketing\Aggregation;
 
-use ONGR\ElasticsearchDSL\Aggregation\Bucketing\DateHistogramAggregation;
+use Packback\ElasticsearchDSL\Aggregation\Bucketing\DateHistogramAggregation;
 
 /**
  * Unit test for children aggregation.
@@ -44,7 +44,7 @@ class DateHistogramAggregationTest extends \PHPUnit_Framework_TestCase
      */
     public function testChildrenAggregationGetArray()
     {
-        $mock = $this->getMockBuilder('ONGR\ElasticsearchDSL\Aggregation\AbstractAggregation')
+        $mock = $this->getMockBuilder('Packback\ElasticsearchDSL\Aggregation\AbstractAggregation')
             ->disableOriginalConstructor()
             ->getMockForAbstractClass();
         $aggregation = new DateHistogramAggregation('foo');

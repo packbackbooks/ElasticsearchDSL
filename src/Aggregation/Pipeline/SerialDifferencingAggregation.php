@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Aggregation\Pipeline;
+namespace Packback\ElasticsearchDSL\Aggregation\Pipeline;
 
 /**
  * Class representing Serial Differencing Pipeline Aggregation.

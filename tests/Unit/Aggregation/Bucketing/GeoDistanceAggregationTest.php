@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Bucketing\Aggregation;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Bucketing\Aggregation;
 
-use ONGR\ElasticsearchDSL\Aggregation\Bucketing\GeoDistanceAggregation;
+use Packback\ElasticsearchDSL\Aggregation\Bucketing\GeoDistanceAggregation;
 
 class GeoDistanceAggregationTest extends \PHPUnit_Framework_TestCase
 {

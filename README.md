@@ -57,9 +57,9 @@ Create search:
   
   $client = ClientBuilder::create()->build(); //elasticsearch-php client
   
-  $matchAll = new ONGR\ElasticsearchDSL\Query\MatchAllQuery();
+  $matchAll = new Packback\ElasticsearchDSL\Query\MatchAllQuery();
   
-  $search = new ONGR\ElasticsearchDSL\Search();
+  $search = new Packback\ElasticsearchDSL\Search();
   $search->addQuery($matchAll);
   
   $params = [

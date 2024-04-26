@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Query\Geo;
+namespace Packback\ElasticsearchDSL\Query\Geo;
 
-use ONGR\ElasticsearchDSL\BuilderInterface;
-use ONGR\ElasticsearchDSL\ParametersTrait;
+use Packback\ElasticsearchDSL\BuilderInterface;
+use Packback\ElasticsearchDSL\ParametersTrait;
 
 /**
  * Represents Elasticsearch "geo_distance" query.

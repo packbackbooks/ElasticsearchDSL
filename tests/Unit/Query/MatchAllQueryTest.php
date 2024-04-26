@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Query;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Query;
 
-use ONGR\ElasticsearchDSL\Query\MatchAllQuery;
+use Packback\ElasticsearchDSL\Query\MatchAllQuery;
 
 class MatchAllQueryTest extends \PHPUnit_Framework_TestCase
 {

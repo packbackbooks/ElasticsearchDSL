@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit;
+namespace Packback\ElasticsearchDSL\Tests\Unit;
 
-use ONGR\ElasticsearchDSL\ParametersTrait;
+use Packback\ElasticsearchDSL\ParametersTrait;
 
 /**
  * Test for ParametersTrait.
@@ -28,7 +28,7 @@ class ParametersTraitTest extends \PHPUnit_Framework_TestCase
      */
     public function setUp()
     {
-        $this->parametersTraitMock = $this->getMockForTrait('ONGR\ElasticsearchDSL\ParametersTrait');
+        $this->parametersTraitMock = $this->getMockForTrait('Packback\ElasticsearchDSL\ParametersTrait');
     }
 
     /**

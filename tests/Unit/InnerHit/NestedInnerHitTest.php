@@ -1,11 +1,11 @@
 <?php
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\InnerHit;
+namespace Packback\ElasticsearchDSL\Tests\Unit\InnerHit;
 
-use ONGR\ElasticsearchDSL\InnerHit\NestedInnerHit;
-use ONGR\ElasticsearchDSL\Query\FullText\MatchQuery;
-use ONGR\ElasticsearchDSL\Query\Joining\NestedQuery;
-use ONGR\ElasticsearchDSL\Search;
+use Packback\ElasticsearchDSL\InnerHit\NestedInnerHit;
+use Packback\ElasticsearchDSL\Query\FullText\MatchQuery;
+use Packback\ElasticsearchDSL\Query\Joining\NestedQuery;
+use Packback\ElasticsearchDSL\Search;
 
 class NestedInnerHitTest extends \PHPUnit_Framework_TestCase
 {

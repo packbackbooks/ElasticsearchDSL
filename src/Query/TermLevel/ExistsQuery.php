@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Query\TermLevel;
+namespace Packback\ElasticsearchDSL\Query\TermLevel;
 
-use ONGR\ElasticsearchDSL\BuilderInterface;
+use Packback\ElasticsearchDSL\BuilderInterface;
 
 /**
  * Represents Elasticsearch "exists" query.

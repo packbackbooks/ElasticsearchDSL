@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\SearchEndpoint;
+namespace Packback\ElasticsearchDSL\SearchEndpoint;
 
-use ONGR\ElasticsearchDSL\BuilderInterface;
-use ONGR\ElasticsearchDSL\ParametersTrait;
-use ONGR\ElasticsearchDSL\Serializer\Normalizer\AbstractNormalizable;
+use Packback\ElasticsearchDSL\BuilderInterface;
+use Packback\ElasticsearchDSL\ParametersTrait;
+use Packback\ElasticsearchDSL\Serializer\Normalizer\AbstractNormalizable;
 
 /**
  * Abstract class used to define search endpoint with references.

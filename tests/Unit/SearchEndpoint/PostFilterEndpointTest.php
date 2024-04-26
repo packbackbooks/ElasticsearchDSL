@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Unit\SearchEndpoint;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Unit\SearchEndpoint;
 
-use ONGR\ElasticsearchDSL\Query\MatchAllQuery;
-use ONGR\ElasticsearchDSL\SearchEndpoint\PostFilterEndpoint;
+use Packback\ElasticsearchDSL\Query\MatchAllQuery;
+use Packback\ElasticsearchDSL\SearchEndpoint\PostFilterEndpoint;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
 
@@ -26,7 +26,7 @@ class PostFilterEndpointTest extends \PHPUnit_Framework_TestCase
      */
     public function testItCanBeInstantiated()
     {
-        $this->assertInstanceOf('ONGR\ElasticsearchDSL\SearchEndpoint\PostFilterEndpoint', new PostFilterEndpoint());
+        $this->assertInstanceOf('Packback\ElasticsearchDSL\SearchEndpoint\PostFilterEndpoint', new PostFilterEndpoint());
     }
 
     /**

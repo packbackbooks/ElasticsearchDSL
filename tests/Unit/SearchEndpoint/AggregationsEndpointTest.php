@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Unit\SearchEndpoint;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Unit\SearchEndpoint;
 
-use ONGR\ElasticsearchDSL\Aggregation\Bucketing\MissingAggregation;
-use ONGR\ElasticsearchDSL\SearchEndpoint\AggregationsEndpoint;
+use Packback\ElasticsearchDSL\Aggregation\Bucketing\MissingAggregation;
+use Packback\ElasticsearchDSL\SearchEndpoint\AggregationsEndpoint;
 
 /**
  * Class AggregationsEndpointTest.
@@ -25,7 +25,7 @@ class AggregationsEndpointTest extends \PHPUnit_Framework_TestCase
     public function testItCanBeInstantiated()
     {
         $this->assertInstanceOf(
-            'ONGR\ElasticsearchDSL\SearchEndpoint\AggregationsEndpoint',
+            'Packback\ElasticsearchDSL\SearchEndpoint\AggregationsEndpoint',
             new AggregationsEndpoint()
         );
     }

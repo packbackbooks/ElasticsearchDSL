@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit;
+namespace Packback\ElasticsearchDSL\Tests\Unit;
 
-use ONGR\ElasticsearchDSL\Query\TermLevel\ExistsQuery;
-use ONGR\ElasticsearchDSL\Query\TermLevel\TermQuery;
-use ONGR\ElasticsearchDSL\Search;
-use ONGR\ElasticsearchDSL\Sort\FieldSort;
-use ONGR\ElasticsearchDSL\Suggest\Suggest;
+use Packback\ElasticsearchDSL\Query\TermLevel\ExistsQuery;
+use Packback\ElasticsearchDSL\Query\TermLevel\TermQuery;
+use Packback\ElasticsearchDSL\Search;
+use Packback\ElasticsearchDSL\Sort\FieldSort;
+use Packback\ElasticsearchDSL\Suggest\Suggest;
 
 /**
  * Test for Search.
@@ -27,7 +27,7 @@ class SearchTest extends \PHPUnit_Framework_TestCase
      */
     public function testItCanBeInstantiated()
     {
-        $this->assertInstanceOf('ONGR\ElasticsearchDSL\Search', new Search());
+        $this->assertInstanceOf('Packback\ElasticsearchDSL\Search', new Search());
     }
 
     public function testScrollUriParameter()

@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ONGR\\ElasticsearchDSL\\": "src/"
+            "Packback\\ElasticsearchDSL\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ONGR\\ElasticsearchDSL\\Tests\\": "tests/"
+            "Packback\\ElasticsearchDSL\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "dev",

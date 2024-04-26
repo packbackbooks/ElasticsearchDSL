@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Query\Span;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Query\Span;
 
-use ONGR\ElasticsearchDSL\Query\Span\SpanOrQuery;
+use Packback\ElasticsearchDSL\Query\Span\SpanOrQuery;
 
 /**
  * Unit test for SpanOrQuery.
@@ -23,7 +23,7 @@ class SpanOrQueryTest extends \PHPUnit_Framework_TestCase
      */
     public function testToArray()
     {
-        $mock = $this->getMockBuilder('ONGR\ElasticsearchDSL\Query\Span\SpanQueryInterface')->getMock();
+        $mock = $this->getMockBuilder('Packback\ElasticsearchDSL\Query\Span\SpanQueryInterface')->getMock();
         $mock
             ->expects($this->once())
             ->method('toArray')

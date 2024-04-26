@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Bucketing\Aggregation;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Bucketing\Aggregation;
 
-use ONGR\ElasticsearchDSL\Aggregation\Bucketing\NestedAggregation;
-use ONGR\ElasticsearchDSL\Aggregation\Bucketing\TermsAggregation;
+use Packback\ElasticsearchDSL\Aggregation\Bucketing\NestedAggregation;
+use Packback\ElasticsearchDSL\Aggregation\Bucketing\TermsAggregation;
 
 class NestedAggregationTest extends \PHPUnit_Framework_TestCase
 {

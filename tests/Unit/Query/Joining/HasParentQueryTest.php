@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Query\Joining;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Query\Joining;
 
-use ONGR\ElasticsearchDSL\Query\Joining\HasParentQuery;
+use Packback\ElasticsearchDSL\Query\Joining\HasParentQuery;
 
 class HasParentQueryTest extends \PHPUnit_Framework_TestCase
 {
@@ -20,7 +20,7 @@ class HasParentQueryTest extends \PHPUnit_Framework_TestCase
      */
     public function testConstructor()
     {
-        $parentQuery = $this->getMockBuilder('ONGR\ElasticsearchDSL\BuilderInterface')->getMock();
+        $parentQuery = $this->getMockBuilder('Packback\ElasticsearchDSL\BuilderInterface')->getMock();
         $query = new HasParentQuery('test_type', $parentQuery, ['test_parameter1']);
         $this->assertEquals(['test_parameter1'], $query->getParameters());
     }

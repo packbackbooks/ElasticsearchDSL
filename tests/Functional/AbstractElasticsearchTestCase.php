@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Functional;
+namespace Packback\ElasticsearchDSL\Tests\Functional;
 
 use Elasticsearch\Client;
 use Elasticsearch\ClientBuilder;
-use ONGR\ElasticsearchDSL\Search;
+use Packback\ElasticsearchDSL\Search;
 
 abstract class AbstractElasticsearchTestCase extends \PHPUnit_Framework_TestCase
 {

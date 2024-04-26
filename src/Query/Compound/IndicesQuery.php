@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Query\Compound;
+namespace Packback\ElasticsearchDSL\Query\Compound;
 
-use ONGR\ElasticsearchDSL\BuilderInterface;
+use Packback\ElasticsearchDSL\BuilderInterface;
 
 /**
  * Represents Elasticsearch "indices" query.
@@ -71,7 +71,7 @@ class IndicesQuery implements BuilderInterface
         $output['query'] = $this->query->toArray();
 
         if ($this->noMatchQuery !== null) {
-            if (is_a($this->noMatchQuery, 'ONGR\ElasticsearchDSL\BuilderInterface')) {
+            if (is_a($this->noMatchQuery, 'Packback\ElasticsearchDSL\BuilderInterface')) {
                 $output['no_match_query'] = $this->noMatchQuery->toArray();
             } else {
                 $output['no_match_query'] = $this->noMatchQuery;

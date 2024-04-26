@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Aggregation\Bucketing;
+namespace Packback\ElasticsearchDSL\Aggregation\Bucketing;
 
 /**
  * Class representing TermsAggregation.

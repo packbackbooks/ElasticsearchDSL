@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\SearchEndpoint;
+namespace Packback\ElasticsearchDSL\SearchEndpoint;
 
-use ONGR\ElasticsearchDSL\Suggest\TermSuggest;
+use Packback\ElasticsearchDSL\Suggest\TermSuggest;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 
 /**

@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Query\TermLevel;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Query\TermLevel;
 
-use ONGR\ElasticsearchDSL\Query\TermLevel\RangeQuery;
+use Packback\ElasticsearchDSL\Query\TermLevel\RangeQuery;
 
 class RangeQueryTest extends \PHPUnit_Framework_TestCase
 {

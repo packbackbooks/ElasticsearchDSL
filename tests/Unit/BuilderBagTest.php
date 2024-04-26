@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit;
+namespace Packback\ElasticsearchDSL\Tests\Unit;
 
-use ONGR\ElasticsearchDSL\BuilderBag;
-use ONGR\ElasticsearchDSL\BuilderInterface;
+use Packback\ElasticsearchDSL\BuilderBag;
+use Packback\ElasticsearchDSL\BuilderInterface;
 
 class BuilderBagTest extends \PHPUnit_Framework_TestCase
 {
@@ -83,7 +83,7 @@ class BuilderBagTest extends \PHPUnit_Framework_TestCase
      */
     private function getBuilder($name)
     {
-        $friendlyBuilderMock = $this->getMockBuilder('ONGR\ElasticsearchDSL\BuilderInterface')
+        $friendlyBuilderMock = $this->getMockBuilder('Packback\ElasticsearchDSL\BuilderInterface')
             ->setMethods(['getName', 'toArray', 'getType'])
             ->disableOriginalConstructor()
             ->getMock();

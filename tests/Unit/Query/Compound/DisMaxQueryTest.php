@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Query\Compound;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Query\Compound;
 
-use ONGR\ElasticsearchDSL\Query\Compound\DisMaxQuery;
+use Packback\ElasticsearchDSL\Query\Compound\DisMaxQuery;
 
 class DisMaxQueryTest extends \PHPUnit_Framework_TestCase
 {
@@ -20,7 +20,7 @@ class DisMaxQueryTest extends \PHPUnit_Framework_TestCase
      */
     public function testToArray()
     {
-        $mock = $this->getMockBuilder('ONGR\ElasticsearchDSL\BuilderInterface')->getMock();
+        $mock = $this->getMockBuilder('Packback\ElasticsearchDSL\BuilderInterface')->getMock();
         $mock
             ->expects($this->any())
             ->method('toArray')

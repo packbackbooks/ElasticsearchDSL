@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Query\Specialized;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Query\Specialized;
 
-use ONGR\ElasticsearchDSL\Query\Specialized\ScriptQuery;
+use Packback\ElasticsearchDSL\Query\Specialized\ScriptQuery;
 
 class ScriptQueryTest extends \PHPUnit_Framework_TestCase
 {

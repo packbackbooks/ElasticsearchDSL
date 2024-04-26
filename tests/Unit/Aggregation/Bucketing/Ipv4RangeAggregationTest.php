@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Bucketing\Aggregation;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Bucketing\Aggregation;
 
-use ONGR\ElasticsearchDSL\Aggregation\Bucketing\Ipv4RangeAggregation;
+use Packback\ElasticsearchDSL\Aggregation\Bucketing\Ipv4RangeAggregation;
 
 class Ipv4RangeAggregationTest extends \PHPUnit_Framework_TestCase
 {

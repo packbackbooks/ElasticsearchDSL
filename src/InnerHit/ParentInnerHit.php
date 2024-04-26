@@ -1,6 +1,6 @@
 <?php
 
-namespace ONGR\ElasticsearchDSL\InnerHit;
+namespace Packback\ElasticsearchDSL\InnerHit;
 
 class ParentInnerHit extends NestedInnerHit
 {

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Query\Joining;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Query\Joining;
 
-use ONGR\ElasticsearchDSL\Query\Joining\NestedQuery;
-use ONGR\ElasticsearchDSL\Query\TermLevel\TermsQuery;
+use Packback\ElasticsearchDSL\Query\Joining\NestedQuery;
+use Packback\ElasticsearchDSL\Query\TermLevel\TermsQuery;
 
 class NestedQueryTest extends \PHPUnit_Framework_TestCase
 {

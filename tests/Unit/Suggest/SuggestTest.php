@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Suggest;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Suggest;
 
-use ONGR\ElasticsearchDSL\Suggest\Suggest;
+use Packback\ElasticsearchDSL\Suggest\Suggest;
 
 class SuggestTest extends \PHPUnit_Framework_TestCase
 {

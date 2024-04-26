@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Highlight;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Highlight;
 
-use ONGR\ElasticsearchDSL\Highlight\Highlight;
+use Packback\ElasticsearchDSL\Highlight\Highlight;
 
 class HighlightTest extends \PHPUnit_Framework_TestCase
 {

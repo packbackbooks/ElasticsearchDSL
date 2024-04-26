@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Serializer\Normalizer;
+namespace Packback\ElasticsearchDSL\Serializer\Normalizer;
 
-use ONGR\ElasticsearchDSL\ParametersTrait;
+use Packback\ElasticsearchDSL\ParametersTrait;
 use Symfony\Component\Serializer\Normalizer\NormalizableInterface;
 
 /**

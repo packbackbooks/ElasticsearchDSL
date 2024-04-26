@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace ONGR\ElasticsearchDSL\Tests\Unit\Unit\SearchEndpoint;
+namespace Packback\ElasticsearchDSL\Tests\Unit\Unit\SearchEndpoint;
 
-use ONGR\ElasticsearchDSL\SearchEndpoint\InnerHitsEndpoint;
+use Packback\ElasticsearchDSL\SearchEndpoint\InnerHitsEndpoint;
 
 /**
  * Class AggregationsEndpointTest.
@@ -24,7 +24,7 @@ class InnerHitsEndpointTest extends \PHPUnit_Framework_TestCase
     public function testItCanBeInstantiated()
     {
         $this->assertInstanceOf(
-            'ONGR\ElasticsearchDSL\SearchEndpoint\InnerHitsEndpoint',
+            'Packback\ElasticsearchDSL\SearchEndpoint\InnerHitsEndpoint',
             new InnerHitsEndpoint()
         );
     }
@@ -35,7 +35,7 @@ class InnerHitsEndpointTest extends \PHPUnit_Framework_TestCase
     public function testEndpointGetter()
     {
         $hitName = 'foo';
-        $innerHit = $this->getMockBuilder('ONGR\ElasticsearchDSL\BuilderInterface')->getMock();
+        $innerHit = $this->getMockBuilder('Packback\ElasticsearchDSL\BuilderInterface')->getMock();
         $endpoint = new InnerHitsEndpoint();
         $endpoint->add($innerHit, $hitName);
         $builders = $endpoint->getAll();
@@ -53,7 +53,7 @@ class InnerHitsEndpointTest extends \PHPUnit_Framework_TestCase
             ->getMockBuilder('Symfony\Component\Serializer\Normalizer\NormalizerInterface')
             ->getMock();
         $innerHit = $this
-            ->getMockBuilder('ONGR\ElasticsearchDSL\BuilderInterface')
+            ->getMockBuilder('Packback\ElasticsearchDSL\BuilderInterface')
             ->setMethods(['getName', 'toArray', 'getType'])
             ->getMock();
         $innerHit->expects($this->any())->method('getName')->willReturn('foo');
